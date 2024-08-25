@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "n8rdmod",
+	"version": "${version}",
+	"name": "N8rd Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"n8rd"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/n8rdmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.n8rd.n8rdmod.N8rdMod"
+		],
+		"fabric-datagen": [
+			"net.n8rd.n8rdmod.N8rdModDataGenerator"
+		],
+		"client": [
+			"net.n8rd.n8rdmod.N8rdModClient"
+		]
+	},
+	"mixins": [
+		"n8rdmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
